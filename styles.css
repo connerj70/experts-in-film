@@ -1,0 +1,146 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    background-color: #fcecec;
+}
+
+.main-wrapper {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 50px);
+}
+
+.header-wrapper {
+    height: 50px;
+    width: 100%;
+    background-color: #818a9c;
+}
+
+.header-wrapper button i {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.nav-wrapper {
+    width: 70%;
+    height: 100vh;
+    background-color: #FFFFE0;
+    color: blue;
+    position: absolute;
+    left: -70%;
+    top: 0;
+    float: left;
+    transition: .6s all;
+}
+
+.nav-wrapper-active {
+    left: 0;
+    z-index: 1;
+    transition: .6s all;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: blue;
+    float: right;
+    margin-right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#openSB {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-bar-list {
+    font-size: 1.3em;
+    padding: 25px;
+}
+
+.nav-bar-list li {
+    margin-top: 15px;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.multiSoundDetails {
+    display: none;
+}
+
+.desktop-links{
+    display: none;
+}
+
+.desktop-links li {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.desktop-links li:hover {
+    color: #FFFFE0;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #818a9c;
+    z-index: 2;
+}
+
+.social-container {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+    "p d d"
+    "p d d"
+}
+
+.picture {
+    width: 200px;
+    height: 100%;
+    background: blue;
+    grid-area: p;
+}
+
+.desc {
+    width: 200px;
+    height: 100%;
+    background: green;
+    grid-area: d;
+}
+
+
+@media(min-width: 850px){
+    .nav-wrapper{
+        display: none;
+    }
+    #openSB {
+        display: none;
+    }
+    .content-container{
+        width: 85%;
+        margin: 20px auto;
+        min-height: calc(100vh - 140px);
+    }
+    .header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .desktop-links{
+        display: flex;
+    }
+}
