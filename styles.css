@@ -29,7 +29,7 @@ html, body {
 
 .header-wrapper {
     background-image: url("./assets/spiration dark/spiration dark.png");
-    height: 50px;
+    height: 70px;
     width: 100%;
     margin: 0 auto;
     background-color: var(--header-background-color);
@@ -345,4 +345,25 @@ iframe {
     to {
        transform: translateY(-10px)
     }
+}
+
+.carver-images {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+#carver_tickets {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px #fff;
+}
+
+#carver_tickets_caption {
+    margin-top: 6%;
+    margin-left: 50px;
+    font-size: 4rem;
+    padding: 20px;
+    color: rgba(199, 199, 82, 0.8);
 }
