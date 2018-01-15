@@ -11,6 +11,7 @@
     background-color: #686868;
     animation: fadein 5s;
     font-family: "Roboto";
+    color: #0085BA;
   }
   .fog-wrapper {
     width: 100%;

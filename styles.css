@@ -21,6 +21,11 @@ html, body {
     
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .main-wrapper {
     position: absolute;
     width: 100%;
@@ -28,13 +33,16 @@ html, body {
 }
 
 .header-wrapper {
-    background-image: url("./assets/spiration dark/spiration dark.png");
+    /* background-image: url("./assets/spiration dark/spiration dark.png"); */
     height: 70px;
     width: 100%;
     margin: 0 auto;
     background-color: var(--header-background-color);
     display: flex;
     padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .description-heading {
@@ -132,7 +140,7 @@ i {
 
 .desktop-links li {
     font-size: 1.4rem;
-    margin-right: 40px;
+    margin-right: 30px;
     cursor: pointer;
 }
 
@@ -157,10 +165,10 @@ i {
     background-color: #fff;
     border-radius: 4px;
     padding: 20px;
-    color: black;
+    color: #333;
     grid-template-areas: 
-    "p d d d d d d d d d d"
-    "p d d d d d d d d d d"
+    "p d d d d d d d d d d d d"
+    "p d d d d d d d d d d d d"
 }
 
 .picture {
@@ -237,7 +245,9 @@ iframe {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .desktop-links{
         display: flex;
@@ -261,6 +271,21 @@ iframe {
 
 #random3 {
     margin-right: 0;
+    background-color: #00A8E8;
+    border-radius: 5px;
+}
+
+#random3 h2 {
+    background-color: #00A8E8;
+    padding: 5px;
+    margin-top: -5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #FFF;
+}
+
+#random3 h2:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 0px #00A8E8;
 }
 
 #superpower {

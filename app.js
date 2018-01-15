@@ -4,6 +4,7 @@ var slider = document.querySelector(".nav-wrapper");
 var sliderImages = document.querySelectorAll(".carver_tickets");
 var sliderCaptions = document.querySelectorAll(".carver_tickets_caption");
 
+
 hamburgerButton.addEventListener('click', function() {
     slider.classList.remove('nav-wrapper-active');
 });
