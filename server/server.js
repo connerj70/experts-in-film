@@ -13,6 +13,7 @@ var token;
 
 app.post('/charge', function(req, res, next) {
   var amount = parseInt(req.body.amount);
+  amount = amount * 100;
   var token = req.body.stripeToken;
   stripe.charges.create({
     amount: amount,
@@ -20,7 +21,7 @@ app.post('/charge', function(req, res, next) {
     description: "Example charge",
     source: token,
   }, function(err, charge) {
-    console.log(charge)
+    res.status(200).redirect('http://127.0.0.1:8080/');
   });
 });
 

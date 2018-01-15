@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+
     <link rel="stylesheet" href="./donate.css">
     <title>Document</title>
 </head>
 <body>
     <div class="donate-container">
+        <h1>Donations</h1>
         <form action="http://127.0.0.1:3030/charge" method="post" id="payment-form">
-            <div>
-                <input type='number' name="amount" placeholder="amount to donate $" />
+            <div id="amount-div">
+                <h2>Donation Amount</h2>
+                <input id="amount" type='number' name="amount" placeholder="amount to donate $" />
             </div>
             <div class="form-row">
               <label for="card-element">

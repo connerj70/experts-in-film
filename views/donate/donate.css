@@ -1,6 +1,9 @@
 .donate-container {
     width: 70%;
-    margin: 200px auto;
+    margin: 50px auto;
+    border: 1px solid #d3d3d3;
+    padding: 50px;
+    padding-top: 10px;
 }
 
 .StripeElement {
@@ -31,7 +34,26 @@
       background-color: #0085BA; 
       color: #fff;
       border-radius: 5px;
-      margin-top: 5px;
+      margin-top: 10px;
       font-size: 1.2rem;
 
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "Sedgwick Ave Display";
+    font-size:50px;
+  }
+
+  h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #amount {
+    margin-bottom: 10px;
+    border-radius: 2px;
+  }
+
+  #amount-div {
+    margin-bottom: 30px;
   }
