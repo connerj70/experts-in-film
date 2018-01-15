@@ -118,7 +118,8 @@ html, body {
 }
 
 .desktop-links li {
-    margin-right: 10px;
+    font-size: 1.4rem;
+    margin-right: 40px;
     cursor: pointer;
 }
 
@@ -348,22 +349,37 @@ iframe {
 }
 
 .carver-images {
-    margin-top: 8%;
+    margin-top: 3%;
+    justify-content: space-between;
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-#carver_tickets {
+.carver_tickets {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     box-shadow: 1px 1px 2px #fff;
+    margin: 20px auto;
+    transform: translateX(-1500px)
 }
 
-#carver_tickets_caption {
-    margin-top: 6%;
-    margin-left: 50px;
+.carver_tickets_caption {
     font-size: 4rem;
     padding: 20px;
     color: rgba(199, 199, 82, 0.8);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 28px;
 }
+
+.big-words {
+    font-size: 1.3em;
+}
+
+.active {
+    transform: translateX(0px);
+    transition: 1s all;
+}
+
