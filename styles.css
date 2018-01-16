@@ -1,9 +1,10 @@
 :root {
     --main-font-color: #fff;
     --main-background-color: #383838;
-    --header-background-color: #383838;
+    --header-background-color: rgba(56, 56, 56, 0.7);
     --nav-background-color: #00A8E8;
     --nav-color: #fff;
+    --space-ship-color: #fccb19;
 }
 
 html, body {
@@ -13,11 +14,12 @@ html, body {
     color: var(--main-font-color);
     font-family: "Roboto";
     background-color: var(--main-background-color);
-    background-image: url("./assets/spiration dark/spiration dark.png");
+    background-image: url("./assets/tileable-classic-nebula-space-patterns-6/tileable-classic-nebula-space-patterns-6.jpg");
     animation: fadein 3s;
     /* background: #606c88;  
     background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  
     background: linear-gradient(to right, #3f4c6b, #606c88); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    fill: yellow;
     
 }
 
@@ -153,7 +155,7 @@ i {
     height: 50px;
     background-color: var(--header-background-color);
     z-index: 2;
-    background-image: url("./assets/spiration dark/spiration dark.png");
+    /* background-image: url("./assets/spiration dark/spiration dark.png"); */
 }
 
 .social-container {
@@ -396,6 +398,7 @@ iframe {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    fill: yellow;
 }
 
 .carver_tickets {
@@ -432,4 +435,33 @@ iframe {
 
 #pod {
     font-size: 35px;
+}
+
+.star-wars-ship {
+    width: 300px;
+    height: 300px;
+    transform: translateX(-500px);
+    display: inline-block;
+    position: absolute;
+    top: 160%;
+}
+
+.remove-transform {
+    transition: all 2s;
+    transform: translateX(50vw);
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    top: 160%;
+}
+
+.space-ship-button {
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: var(--space-ship-color);
+    color: #fff;
+    cursor: pointer;
 }

@@ -64,3 +64,11 @@ function checkSlide2(e) {
 
 window.addEventListener('scroll', debounce(checkSlide, 20, true));
 window.addEventListener('scroll', debounce(checkSlide2, 20, true));
+
+
+function spaceship() {
+    var spaceship = document.querySelector('.star-wars-ship');
+    console.log(spaceship)
+    spaceship.classList.remove('star-wars-ship');
+    spaceship.classList.add('remove-transform');
+}
