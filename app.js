@@ -3,6 +3,9 @@ var openSB = document.querySelector("#openSB");
 var slider = document.querySelector(".nav-wrapper");
 var sliderImages = document.querySelectorAll(".carver_tickets");
 var sliderCaptions = document.querySelectorAll(".carver_tickets_caption");
+var scrollToTopButton = document.querySelector("#scroll-to-top");
+
+scrollToTopButton.addEventListener('click', scrollToTop);
 
 
 hamburgerButton.addEventListener('click', function() {
@@ -71,4 +74,8 @@ function spaceship() {
     console.log(spaceship)
     spaceship.classList.remove('star-wars-ship');
     spaceship.classList.add('remove-transform');
+}
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
 }

@@ -70,13 +70,14 @@ a {
     top: 0;
     float: left;
     transition: .6s all;
+    z-index: 30;
 }
 
 
 
 .nav-wrapper-active {
     left: 0;
-    z-index: 1;
+    z-index: 30;
     transition: .6s all;
 }
 
@@ -467,4 +468,19 @@ iframe {
     background-color: var(--space-ship-color);
     color: #fff;
     cursor: pointer;
+    border: none;
+}
+
+#scroll-to-top {
+    background: none;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scroll-to-top:focus {
+    outline: none;
 }
