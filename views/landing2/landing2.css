@@ -1,0 +1,85 @@
+.landing-background {
+    position: relative;
+}
+
+.landing-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.video-container {
+    position: fixed;
+    right: 50%;
+    margin-right: -350px;
+    width: 700px;
+    top: 125px;
+}
+
+.landing-logo {
+    display: none;
+    width: 100%;
+    opacity: 0.5;
+}
+
+
+.landing-video {
+    width: 100%;
+    border-radius: 0%;
+    opacity: 0.4;
+}
+
+.landing-body {
+    Background: url("../../assets/empty-theater-crop-filter.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+}
+
+.links-container {
+    position: absolute;
+    bottom: 30vh;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.landing-link {
+    font-family: "Monotype Corsiva";
+    font-size: 45px;
+    color: goldenrod;
+    background-color: rgba(159, 61, 62, 0.4);
+    border: 2px solid goldenrod;
+    cursor: pointer;
+    padding: 10px 40px;
+}
+
+.landing-link:hover {
+    color: gold;
+    background-color: #9f3d3e;
+    text-decoration: none;
+    transition: 1s;    
+}
+
+@media(max-width: 450px){
+    /* .landing-video {
+        display: none;
+    }
+
+    .landing-logo {
+        display: block;
+    } */
+
+    .video-container {
+        margin-right: -175px;
+        width: 350px;
+        top: 125px;
+    }
+
+    .landing-link {
+        padding: 5px 20px;
+    }
+}

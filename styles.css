@@ -24,7 +24,7 @@ html, body {
 .main-wrapper {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100%;
 }
 
 .header-wrapper {
@@ -35,6 +35,7 @@ html, body {
     background-color: var(--header-background-color);
     display: flex;
     padding-left: 10px;
+    z-index: 10;
 }
 
 .description-heading {
@@ -58,8 +59,6 @@ html, body {
     float: left;
     transition: .6s all;
 }
-
-
 
 .nav-wrapper-active {
     left: 0;
@@ -107,6 +106,7 @@ html, body {
 .content-container {
     margin: 20px auto;
     width: 95%;
+    overflow: auto;
 }
 
 .multiSoundDetails {

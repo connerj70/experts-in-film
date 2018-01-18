@@ -1,0 +1,301 @@
+.desktop-links li {
+    padding-right: 20px;
+}
+
+.desktop-links li a {
+    font-size: 14px;
+    color: white;
+}
+
+    .desktop-links li a:hover {
+        color: #9f3d3e;
+        text-decoration: none;
+    }
+
+.episode-wrapper {
+    width: 80% !important;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.episode-description {
+    padding-bottom: 20px;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    float: right;
+    text-align: justify;
+    font-family: "Open Sans";
+}
+
+.bio-wrapper {
+    background: url("../../assets/carver-mural-fade-2.jpg") no-repeat;
+    background-size: 32%;
+    width: 100% !important;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+/*#9f3d3e*/
+
+.sidebar {
+    height: 500px;
+    width: 19%;
+    background-color: white;
+    float: right;
+    border-radius: 4px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
+
+    .sidebar p {
+        font-weight: bold;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .sidebar ul {
+        padding-left: 15px;
+    }
+
+        .sidebar ul a li {
+            padding: 5px;
+            font-size: 15px;
+            color: black;
+            font-family: Roboto;
+            cursor: pointer;
+        }
+
+        .sidebar ul a li:hover {
+            background-color: #9f3d3e;
+            padding-left: 0;
+            color: white;
+        }
+
+        .sidebar ul a:hover {
+            text-decoration: none;
+        }
+
+iframe {
+    width: 85%;
+}
+
+.episode-title h2 {
+    font-size: 38px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+}
+
+.episodes-jumbo {
+    background-image: url("../../assets/black-seats.jpg");
+    background-size: cover;
+    height: 490px;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+}
+
+.logo {
+    position: relative;
+    left: 15vw;
+    top: 270px;
+    height: 35%;
+}
+
+.header-wrapper {
+    background-color: black;
+    border: 0;
+    margin: 0;
+    background-image: none;
+    width: 100%;
+    position: fixed;
+}
+
+.date {
+    font-size: 20px;
+    text-align: center;
+    /* color: rgba(31, 31, 31, .5); */
+    color: #9f3d3e;
+    font-family: "Open Sans";
+}
+
+    .date p {
+        margin: 0;
+    }
+
+.row {
+    margin: 0;
+}
+
+.bio-heading h1 {
+    font-size: 25px;
+    color: #3d9f9d;
+    text-align: center;
+}
+
+.bio-picture {
+    text-align: center;
+}
+
+    .bio-picture img {
+        height: 100%;
+        border: 3px solid black;
+    }
+
+.bio-description p {
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    text-align: justify;
+    padding-right: 80px;
+    display: flex;
+    flex: center;
+}
+
+.social-icons-wrapper {
+    text-align: center;
+    font-size: 30px;
+}
+
+.social-icon {
+    color: black;
+    cursor: pointer;
+}
+
+    .fa:focus, .fa:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    .fa-facebook-square:hover {
+        color: #3b5998;
+    }
+
+    .fa-soundcloud:hover {
+        color: rgba(255, 179, 80, 0.9);
+    }
+
+    .fa-instagram:hover {
+        color: rgba(255, 59, 255, 0.8);
+    }
+
+    .fa-envelope:hover {
+        color: #9f3d3e;
+    }
+
+.social-caption {
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    text-align: center;
+}
+
+/*Keeps header from covering anchor points*/
+.anchor {
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
+
+.mobile-nav-wrapper {
+    width: 70%;
+    height: 100vh;
+    background-color: black;
+    color: #9f3d3e;
+    position: absolute;
+    left: -70%;
+    top: 0;
+    float: left;
+    transition: .6s all;
+}
+
+.mobile-nav-wrapper-active {
+    left: 0;
+    z-index: 1;
+    transition: .6s all;
+}
+
+.times-icon {
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+    .fa-times:active {
+        color: white;
+    }
+
+.bars {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+    .bars i {
+        font-size: 30px;
+    }
+
+    .bars i:hover {
+        color: white;
+    }
+
+.mobile-nav-bar-list {
+    font-size: 1.3em;
+    padding: 25px;
+}
+
+    .mobile-nav-bar-list li {
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+        .mobile-nav-bar-list li a {
+            margin-top: 15px;
+            cursor: pointer;
+            color: white;
+        }
+
+#mobile-active-link {
+    color: #9f3d3e;
+}
+
+@media (max-width: 850px) {
+    .sidebar {
+        display: none;
+    }
+
+    .episode-wrapper {
+        width: 100% !important;
+    }
+
+    .bio-heading h1 {
+        font-size: 20px;
+    }
+
+    .bio-description p {
+        text-align: justify;
+        padding: 0;
+    }
+
+    .bars {
+        display: block;
+    }
+}
