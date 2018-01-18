@@ -1,9 +1,10 @@
 :root {
     --main-font-color: #fff;
     --main-background-color: #383838;
-    --header-background-color: #383838;
-    --nav-background-color: rgb(250, 250, 181);
-    --nav-color: rgb(161, 153, 153);
+    --header-background-color: rgba(56, 56, 56, 0.8);
+    --nav-background-color: #00A8E8;
+    --nav-color: #fff;
+    --space-ship-color: #fccb19;
 }
 
 html, body {
@@ -13,12 +14,18 @@ html, body {
     color: var(--main-font-color);
     font-family: "Roboto";
     background-color: var(--main-background-color);
-    background-image: url("./assets/spiration dark/spiration dark.png");
+    background-image: url("./assets/tileable-classic-nebula-space-patterns-6/tileable-classic-nebula-space-patterns-6.jpg");
     animation: fadein 3s;
-    /* background: #606c88;  
-    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  
+    /* background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
     background: linear-gradient(to right, #3f4c6b, #606c88); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    fill: yellow;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .main-wrapper {
@@ -28,19 +35,24 @@ html, body {
 }
 
 .header-wrapper {
-    background-image: url("./assets/spiration dark/spiration dark.png");
-    height: 50px;
+    /* background-image: url("./assets/spiration dark/spiration dark.png"); */
+    height: 70px;
     width: 100%;
     margin: 0 auto;
     background-color: var(--header-background-color);
     display: flex;
     padding-left: 10px;
-    z-index: 10;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
 }
 
 .description-heading {
-    font-size: 25px;
+    font-size: 35px;
     color: #5AAB92;
+    font-weight: 300;
 }
 
 .header-wrapper button i {
@@ -58,11 +70,12 @@ html, body {
     top: 0;
     float: left;
     transition: .6s all;
+    z-index: 30;
 }
 
 .nav-wrapper-active {
     left: 0;
-    z-index: 1;
+    z-index: 30;
     transition: .6s all;
 }
 
@@ -82,8 +95,20 @@ html, body {
     cursor: pointer;
 }
 
+#openSB:hover {
+    color: #0085BA;
+}
+
+i {
+    color: #0085Ba;
+}
+
 #openSB i {
     font-size: 25px;
+}
+
+#openSB i:hover {
+    color: #0085BA;
 }
 
 .nav-bar-list {
@@ -101,10 +126,11 @@ html, body {
     height: 100%;
     position: relative;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .content-container {
-    margin: 20px auto;
+    margin: 80px auto;
     width: 95%;
     overflow: auto;
 }
@@ -118,7 +144,8 @@ html, body {
 }
 
 .desktop-links li {
-    margin-right: 10px;
+    font-size: 1.4rem;
+    margin-right: 30px;
     cursor: pointer;
 }
 
@@ -131,21 +158,22 @@ html, body {
     height: 50px;
     background-color: var(--header-background-color);
     z-index: 2;
-    background-image: url("./assets/spiration dark/spiration dark.png");
+    /* background-image: url("./assets/spiration dark/spiration dark.png"); */
 }
 
 .social-container {
     width: 100%;
     margin-bottom: 20px;
     height: 40%;
+    box-shadow: 0 8px 6px -6px #0085Ba ;
     display: grid;
     background-color: #fff;
     border-radius: 4px;
     padding: 20px;
-    color: black;
-    grid-template-areas: 
-    "p d d d d d d d d d d"
-    "p d d d d d d d d d d"
+    color: #333;
+    grid-template-areas:
+    "p d d d d d d d d d d d d"
+    "p d d d d d d d d d d d d"
 }
 
 .picture {
@@ -156,7 +184,7 @@ html, body {
 }
 
 .picture img {
-    border: 3px solid black;
+    border: 3px solid #00A8E8;
 }
 
 #carver-bench {
@@ -186,11 +214,14 @@ html, body {
 }
 
 .social_icons-container {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px
 }
 
 .social-icons {
     padding-top: 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 .description {
@@ -212,14 +243,16 @@ iframe {
     }
     .content-container{
         width: 80%;
-        margin: 20px auto;
+        margin: 85px auto;
         min-height: calc(100vh - 140px);
     }
     .header-wrapper{
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        width: 80%;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .desktop-links{
         display: flex;
@@ -230,7 +263,6 @@ iframe {
     display: block;
     height: 3px;
     width: 30px;
-    background-color: green;
     animation: jiggle 2s infinite alternate;
 }
 
@@ -244,6 +276,21 @@ iframe {
 
 #random3 {
     margin-right: 0;
+    background-color: #00A8E8;
+    border-radius: 5px;
+}
+
+#random3 h2 {
+    background-color: #00A8E8;
+    padding: 5px;
+    margin-top: -5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #FFF;
+}
+
+#random3 h2:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 0px #00A8E8;
 }
 
 #superpower {
@@ -321,7 +368,8 @@ iframe {
     font-size: 50px;
     margin: 10px auto;
     margin-top: 50px;
-    color: rgba(199, 199, 82, 0.8);
+    color: #fff;
+    font-weight: 700;
 }
 
 #listen-arrow {
@@ -329,7 +377,7 @@ iframe {
     text-align: center;
     margin: 10px auto;
     margin-bottom: 50px;
-    color: rgba(199, 199, 82, 0.8);
+    color: #fff;
     animation: bounce 1s infinite alternate;
 }
 
@@ -345,4 +393,93 @@ iframe {
     to {
        transform: translateY(-10px)
     }
+}
+
+.carver-images {
+    margin-top: 3%;
+    justify-content: space-between;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    fill: yellow;
+}
+
+.carver_tickets {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px #fff;
+    margin: 20px auto;
+    transform: translateX(-1500px)
+}
+
+.carver_tickets_caption {
+    font-size: 4rem;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 28px;
+    font-weight: 700;
+}
+
+.big-words {
+    font-size: 1.3em;
+}
+
+.active {
+    transform: translateX(0px);
+    transition: 1s all;
+}
+
+.accent-color {
+    color: #00A8E8;
+}
+
+#pod {
+    font-size: 35px;
+}
+
+.star-wars-ship {
+    width: 300px;
+    height: 300px;
+    transform: translateX(-500px);
+    display: inline-block;
+    position: absolute;
+    top: 160%;
+}
+
+.remove-transform {
+    transition: all 2s;
+    transform: translateX(50vw);
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    top: 160%;
+}
+
+.space-ship-button {
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: var(--space-ship-color);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+#scroll-to-top {
+    background: none;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scroll-to-top:focus {
+    outline: none;
 }
