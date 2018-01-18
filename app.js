@@ -84,15 +84,10 @@ function spaceship() {
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
-<<<<<<< HEAD
 
-window.onload = function() {
-    fetch('http://api.soundcloud.com/users/' + carversUserId + '/tracks?client_id=' + carversClientId).then(resp => {
-        resp.json().then((data) => {
-            console.log(data);
-        });
-    });
-};
 
-=======
->>>>>>> e7699bdbd9eef7b4ee5d9225e32bcc9e91958f37
+
+
+
+
+
