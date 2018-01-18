@@ -23,17 +23,19 @@ window.onload = function() {
         resp.json().then((data) => {
             console.log(data);
             var root = document.getElementById('root');
-            console.log(root);
             for(var i=0; i < data.length; i++) {
                 let title = data[i].title;
                 let description1 = data[i].description;
                 let trackId = data[i].id;
+                let idName = data[i].permalink;
                 let containerDiv = document.createElement('div');
                 containerDiv.classList.add('container', 'episode-wrapper');
 
                 let dateDiv = document.createElement('div');
                 dateDiv.classList.add('row', 'date');
-
+                let span = document.createElement('span');
+                span.setAttribute('id', idName);
+                containerDiv.appendChild(span);
                 let dateDivParagraph = document.createElement('p');
                 
                 let episodeTitleDiv = document.createElement('div');
@@ -71,6 +73,18 @@ window.onload = function() {
                 episodeDescriptionRow.appendChild(episodeDescriptionContainer);
                 episodeDescriptionContainer.insertAdjacentHTML('beforeend', description1);
                 episodeIframeDiv.insertAdjacentHTML('beforeend', iframe1);
+            }
+
+            for(let j=0; j < data.length; j++) {
+                let idName = data[j].permalink;
+                let title = data[j].title;
+                var sidebar = document.querySelector('.quick-links');
+                var link = document.createElement('a');
+                var li =  document.createElement('li');
+                sidebar.appendChild(link);
+                link.appendChild(li);
+                li.insertAdjacentHTML('beforeend',title);
+                link.href="#" + idName;
             }
 
         });
