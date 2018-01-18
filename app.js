@@ -4,6 +4,9 @@ var slider = document.querySelector(".nav-wrapper");
 var sliderImages = document.querySelectorAll(".carver_tickets");
 var sliderCaptions = document.querySelectorAll(".carver_tickets_caption");
 var scrollToTopButton = document.querySelector("#scroll-to-top");
+var soundCloudString = 'http://api.soundcloud.com/tracks/380880809?client_id=';
+var carversClientId = 'HnbhPkOkvV3iSex4B5fokd8AKygMMrUc';
+var carversUserId = '260724315';
 
 scrollToTopButton.addEventListener('click', scrollToTop);
 
@@ -79,3 +82,12 @@ function spaceship() {
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
+
+window.onload = function() {
+    fetch('http://api.soundcloud.com/users/' + carversUserId + '/tracks?client_id=' + carversClientId).then(resp => {
+        resp.json().then((data) => {
+            console.log(data);
+        });
+    });
+};
+
