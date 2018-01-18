@@ -16,11 +16,11 @@ html, body {
     background-color: var(--main-background-color);
     background-image: url("./assets/tileable-classic-nebula-space-patterns-6/tileable-classic-nebula-space-patterns-6.jpg");
     animation: fadein 3s;
-    /* background: #606c88;  
-    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  
+    /* background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
     background: linear-gradient(to right, #3f4c6b, #606c88); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     fill: yellow;
-    
+
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 .main-wrapper {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100%;
 }
 
 .header-wrapper {
@@ -73,8 +73,6 @@ a {
     z-index: 30;
 }
 
-
-
 .nav-wrapper-active {
     left: 0;
     z-index: 30;
@@ -110,7 +108,7 @@ i {
 }
 
 #openSB i:hover {
-    color: #0085BA; 
+    color: #0085BA;
 }
 
 .nav-bar-list {
@@ -134,6 +132,7 @@ i {
 .content-container {
     margin: 80px auto;
     width: 95%;
+    overflow: auto;
 }
 
 .multiSoundDetails {
@@ -172,7 +171,7 @@ i {
     border-radius: 4px;
     padding: 20px;
     color: #333;
-    grid-template-areas: 
+    grid-template-areas:
     "p d d d d d d d d d d d d"
     "p d d d d d d d d d d d d"
 }

@@ -13,10 +13,12 @@ scrollToTopButton.addEventListener('click', scrollToTop);
 
 hamburgerButton.addEventListener('click', function() {
     slider.classList.remove('nav-wrapper-active');
+    main.style.overflowY = "scroll";
 });
 
 openSB.addEventListener('click', function() {
     slider.classList.add('nav-wrapper-active');
+    main.style.overflowY = "hidden";
 });
 
 function debounce(func, wait, immediate) {
@@ -49,7 +51,7 @@ function checkSlide(e) {
 
 
     });
-}   
+}
 
 function checkSlide2(e) {
     sliderCaptions.forEach(function(sliderImage) {
@@ -66,7 +68,7 @@ function checkSlide2(e) {
 
 
     });
-}   
+}
 
 window.addEventListener('scroll', debounce(checkSlide, 20, true));
 window.addEventListener('scroll', debounce(checkSlide2, 20, true));
@@ -82,6 +84,7 @@ function spaceship() {
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
+<<<<<<< HEAD
 
 window.onload = function() {
     fetch('http://api.soundcloud.com/users/' + carversUserId + '/tracks?client_id=' + carversClientId).then(resp => {
@@ -91,3 +94,5 @@ window.onload = function() {
     });
 };
 
+=======
+>>>>>>> e7699bdbd9eef7b4ee5d9225e32bcc9e91958f37

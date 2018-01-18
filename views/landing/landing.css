@@ -85,7 +85,7 @@
     height: 275px;
       background: url(https://s28.postimg.org/d09w3amlp/fog5.png) no-repeat;
   }
-  
+
   @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -150,7 +150,7 @@ body {
     top: -100px;
     transform: rotateX(20deg)  translateZ(0);
   }
-    100% { 
+    100% {
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
   }
