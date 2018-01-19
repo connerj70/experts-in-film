@@ -67,3 +67,7 @@
   #amount-div {
     margin-bottom: 30px;
   }
+
+  button {
+    cursor: pointer;
+  }

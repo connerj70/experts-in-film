@@ -14,7 +14,7 @@ html, body {
     color: var(--main-font-color);
     font-family: "Roboto";
     background-color: var(--main-background-color);
-    background-image: url("./assets/tileable-classic-nebula-space-patterns-6/tileable-classic-nebula-space-patterns-6.jpg");
+    background-image: url("./assets/jeremy-bishop-160885.jpg");
     animation: fadein 3s;
     /* background: #606c88;
     background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);

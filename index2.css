@@ -1,15 +1,19 @@
 .desktop-links li {
-    padding-right: 20px;
+    padding: 10px 10px;
 }
 
 .desktop-links li a {
-    font-size: 14px;
+    font-size: 1.6rem;
     color: white;
+    border-bottom: rgba(159, 61, 62, 0);
+    transition: all 0.2s ease-in-out;
 }
 
     .desktop-links li a:hover {
-        color: #9f3d3e;
+        color: #fff;
         text-decoration: none;
+        border-bottom: 2px solid rgba(159, 61, 62, 1);
+        padding-bottom: 5px;
     }
 
 .episode-wrapper {
@@ -23,6 +27,7 @@
 }
 
 .episode-description {
+    font-size: 16px;
     padding-bottom: 20px;
     margin-left: 12vw;
     margin-right: 12vw;
@@ -53,7 +58,7 @@
     border-radius: 4px;
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
+    top: 70px;
 }
 
     .sidebar p {
@@ -124,7 +129,7 @@ iframe {
 }
 
 .date {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     /* color: rgba(31, 31, 31, .5); */
     color: #9f3d3e;
@@ -172,10 +177,12 @@ iframe {
 .social-icon {
     color: black;
     cursor: pointer;
+    margin-right: 5px;
+    transition: all 0.3s;
 }
 
     .fa:focus, .fa:hover {
-        color: black;
+        color: #9f3d3e;
         text-decoration: none;
     }
 
@@ -205,8 +212,8 @@ iframe {
 /*Keeps header from covering anchor points*/
 .anchor {
     display: block;
-    height: 70px;
-    margin-top: -70px;
+    height: 120px;
+    margin-top: -120px;
     visibility: hidden;
 }
 
