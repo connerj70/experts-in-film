@@ -14,7 +14,7 @@ html, body {
     color: var(--main-font-color);
     font-family: "Roboto";
     background-color: var(--main-background-color);
-    background-image: url("./assets/jeremy-bishop-160885.jpg");
+    background-image: url("./assets/concrete.jpg");
     animation: fadein 3s;
     /* background: #606c88;
     background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
@@ -97,10 +97,6 @@ a {
 
 #openSB:hover {
     color: #0085BA;
-}
-
-i {
-    color: #0085Ba;
 }
 
 #openSB i {
